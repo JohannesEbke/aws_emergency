@@ -21,11 +21,15 @@ The most useful (but also most drastic) action of this tool is to add inline DEN
 named "EmergencyUserLock-\<random number\>" and "EmergencyRoleLock-\<random number\>"
 to both IAM users and roles (except the user which executes this action):
 
-./aws\_emergency.py --lock-all
+```
+./aws_emergency.py --lock-all
+```
 
 If you accidentally executed this command for testing and now want to undo this action, do:
 
-./aws\_emergency.py --unlock-all
+```
+./aws_emergency.py --unlock-all
+```
 
-To lock individual users or roles, use --lock-user \<name\>, --unlock-user \<name\>
-and --lock-role \<name\>, --unlock-role \<name\>.
+To lock individual users or roles, use `--lock-user <name>`, `--unlock-user <name>`
+and `--lock-role <name>`, `--unlock-role <name>`.
